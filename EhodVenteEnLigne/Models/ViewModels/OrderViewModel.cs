@@ -13,22 +13,20 @@ namespace EhodBoutiqueEnLigne.Models.ViewModels
         [BindNever]
         public ICollection<CartLine> Lines { get; set; }
 
-        [Required(ErrorMessage = "ErrorMissingName")]
+        [Required(ErrorMessage = "Please enter your name")]
         public string Name { get; set; }
+        [Required(ErrorMessage = "Please enter your address")]
 
-        [Required(ErrorMessage = "ErrorMissingAddress")]
         public string Address { get; set; }
+        [Required(ErrorMessage = "Please enter your city")]
 
-        [Required(ErrorMessage = "ErrorMissingCity")]
         public string City { get; set; }
-
-        [Required(ErrorMessage = "ErrorMissingZipCode")]
+        [Required(ErrorMessage = "Please enter your zip code")]
+        
         public string Zip { get; set; }
-
-        [Required(ErrorMessage = "ErrorMissingCountry")]
+        [Required(ErrorMessage = "Please enter your country")]
         public string Country { get; set; }
-
-        [BindNever]
+            [BindNever]
         public DateTime Date { get; set; }
     }
 }
