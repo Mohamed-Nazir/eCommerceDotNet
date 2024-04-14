@@ -1,38 +1,42 @@
 ﻿@model EhodBoutiqueEnLigne.Models.ViewModels.OrderViewModel
 
-<h2 class="mb-3">@Localizer["OrderTitle"]</h2>
-<form asp-action="Index" method="post">
-    <h3 class="mt-3">@Localizer["ShipTo"]</h3>
-    <div class="mb-3">
-        <label>@Localizer["Name"]*:</label>
-         <div><span asp-validation-for="Name" class="text-danger"></span></div>
-         <input asp-for="Name" class="form-control" />
-    </div>
-    
-    <h3>@Localizer["Address"]</h3>
-    <div class="mb-3">
-        <label>@Localizer["Location"]*:</label>
-         <div><span asp-validation-for="Address" class="text-danger"></span></div>
-         <input asp-for="Address" class="form-control" />
-    </div>
-    <div class="row mb-3">
-        <div class="col-4">
-            <label>@Localizer["City"]*:</label>
-             <div><span asp-validation-for="City" class="text-danger"></span></div>
-            <input asp-for="City" class="form-control" />
+<h2 class="mb-3 mt-3">@Localizer["OrderTitle"]</h2>
+
+<div class="d-flex justify-content-center">
+    <form asp-action="Index" method="post" class="col-lg-6">
+        <p class="text-muted">@Localizer["Fields marked with an asterisk"] (<span class="text-danger">*</span>) @Localizer["are required."]</p>
+        <h3 class="mt-3">@Localizer["ShipTo"]</h3>
+        <div class="mb-3">
+            <label>@Localizer["Name"] (<span class="text-danger">*</span>):</label>
+            <div><span asp-validation-for="Name" class="text-danger"></span></div>
+            <input asp-for="Name" class="form-control" />
         </div>
-        <div class="col-4">
-            <label>@Localizer["Zip"]*:</label>
-             <div><span asp-validation-for="Zip" class="text-danger"></span></div>
-             <input asp-for="Zip" class="form-control" />
+
+        <h3>@Localizer["Address"]</h3>
+        <div class="mb-3">
+            <label>@Localizer["Location"] (<span class="text-danger">*</span>):</label>
+            <div><span asp-validation-for="Address" class="text-danger"></span></div>
+            <input asp-for="Address" class="form-control" />
         </div>
-        <div class="col-4">
-            <label>@Localizer["Country"]*:</label>
-             <div><span asp-validation-for="Country" class="text-danger"></span></div>
-             <input asp-for="Country" class="form-control" />
+        <div class="row mb-3">
+            <div class="col-4">
+                <label>@Localizer["City"] (<span class="text-danger">*</span>):</label>
+                <div><span asp-validation-for="City" class="text-danger"></span></div>
+                <input asp-for="City" class="form-control" />
+            </div>
+            <div class="col-4">
+                <label>@Localizer["Zip"] (<span class="text-danger">*</span>):</label>
+                <div><span asp-validation-for="Zip" class="text-danger"></span></div>
+                <input asp-for="Zip" class="form-control" />
+            </div>
+            <div class="col-4">
+                <label>@Localizer["Country"] (<span class="text-danger">*</span>):</label>
+                <div><span asp-validation-for="Country" class="text-danger"></span></div>
+                <input asp-for="Country" class="form-control" />
+            </div>
         </div>
-    </div>
-    <div class="text-center">
-        <input class="btn btn-primary" type="submit" value="@Localizer["CompleteOrder"]" />
-    </div>
-</form>
+        <div class="text-center">
+            <input class="btn btn-primary" type="submit" value="@Localizer["CompleteOrder"]" />
+        </div>
+    </form>
+</div>
