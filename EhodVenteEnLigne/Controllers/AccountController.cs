@@ -46,7 +46,9 @@ namespace EhodBoutiqueEnLigne.Controllers
                     }
                 }
             }
+
             ModelState.AddModelError("", "Invalid name or password");
+            ViewBag.ErrorMessage = "Invalid name or password";
             return View(loginModel);
         }
 
