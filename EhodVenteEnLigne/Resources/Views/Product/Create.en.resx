@@ -138,4 +138,10 @@
   <data name="Stock" xml:space="preserve">
     <value>Stock</value>
   </data>
+  <data name="Field" xml:space="preserve">
+    <value>Fields marked with an asterisk</value>
+  </data>
+   <data name="Required" xml:space="preserve">
+    <value>are required.</value>
+  </data>
 </root>

@@ -5,12 +5,12 @@
 }
 <div class="d-flex justify-content-center mt-3">
     <p class="text-muted">
-        @Localizer["Fields marked with an asterisk"] (<span class="text-danger">*</span>) @Localizer["are required."]
+        @Localizer["Field"] (<span class="text-danger">*</span>) @Localizer["Required"]
     </p>
 </div>
 <div class="d-flex justify-content-center mt-3">
     <form asp-action="Create" method="post" class="col-lg-6">
-        
+          <div asp-validation-summary="All" class="text-danger"></div>
         <div class="mb-3 col-6">
             <label>@Localizer["Name"] (<span class="text-danger">*</span>):</label>
             <div><span asp-validation-for="Name" class="text-danger"></span></div>

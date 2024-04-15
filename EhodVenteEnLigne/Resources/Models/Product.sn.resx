@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -53,7 +53,6 @@
     value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
-
     mimetype: application/x-microsoft.net.object.bytearray.base64
     value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
@@ -117,13 +116,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LanguageEnglish" xml:space="preserve">
-    <value>Anglais</value>
+  <data name="ErrorMissingName" xml:space="preserve">
+    <value>Jooxe len sen tour</value>
   </data>
-  <data name="LanguageFrench" xml:space="preserve">
-    <value>Français</value>
+  <data name="ErrorMissingPrice" xml:space="preserve">
+    <value>Jooxe len njek bi</value>
   </data>
-  <data name="LanguageWolof" xml:space="preserve">
-    <value>Wolof</value>
+  <data name="ErrorMissingStock" xml:space="preserve">
+    <value>Jooxe len li dess</value>
+  </data>
+  <data name="ErrorPriceValue" xml:space="preserve">
+    <value>Njek bi dafa wara eup séro (0)</value>
+  </data>
+  <data name="ErrorStockValue" xml:space="preserve">
+    <value>Li dess dafa wara eup séro (0)</value>
   </data>
 </root>

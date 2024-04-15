@@ -150,4 +150,16 @@
   <data name="Zip" xml:space="preserve">
     <value>Zip</value>
   </data>
+  <data name="Field" xml:space="preserve">
+    <value>Fields marked with an asterisk</value>
+  </data>
+   <data name="Required" xml:space="preserve">
+    <value>are required.</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>Fields marked with an asterisk</value>
+  </data>
+   <data name="Required" xml:space="preserve">
+    <value>are required.</value>
+  </data>
 </root>
