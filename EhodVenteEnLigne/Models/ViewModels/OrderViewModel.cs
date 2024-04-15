@@ -13,18 +13,17 @@ namespace EhodBoutiqueEnLigne.Models.ViewModels
         [BindNever]
         public ICollection<CartLine> Lines { get; set; }
 
-        [Required(ErrorMessage = "Please enter your name")]
+        [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingName")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Please enter your address")]
-
+       
+        [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingAddress")]
         public string Address { get; set; }
-        [Required(ErrorMessage = "Please enter your city")]
-
+        [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingCity")]
         public string City { get; set; }
-        [Required(ErrorMessage = "Please enter your zip code")]
-        
+        [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingZipCode")]
         public string Zip { get; set; }
-        [Required(ErrorMessage = "Please enter your country")]
+
+        [Required(ErrorMessageResourceType = typeof(EhodVenteEnLigne.Resources.Models.Order), ErrorMessageResourceName = "ErrorMissingCountry")]
         public string Country { get; set; }
             [BindNever]
         public DateTime Date { get; set; }

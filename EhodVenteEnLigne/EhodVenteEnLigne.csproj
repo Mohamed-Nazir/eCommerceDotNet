@@ -75,6 +75,7 @@
     <EmbeddedResource Update="Resources\Views\Shared\Components\LanguageSelector\Default.sn.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+     
   </ItemGroup>
 
 </Project>

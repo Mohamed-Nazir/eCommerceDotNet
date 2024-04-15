@@ -3,12 +3,13 @@
     ViewData["Title"] = Localizer["CreatProductTitle"];
     Layout = "_AdminLayout";
 }
+
 <div class="d-flex justify-content-center mt-3">
-    <p class="text-muted">
-        @Localizer["Field"] (<span class="text-danger">*</span>) @Localizer["Required"]
-    </p>
-</div>
-<div class="d-flex justify-content-center mt-3">
+    <div class="d-flex justify-content-center mt-3">
+        <p class="text-muted">
+            @Localizer["Field"] (<span class="text-danger">*</span>) @Localizer["Required"]
+        </p>
+    </div>
     <form asp-action="Create" method="post" class="col-lg-6">
           <div asp-validation-summary="All" class="text-danger"></div>
         <div class="mb-3 col-6">
@@ -19,7 +20,7 @@
         <div class="mb-3 col-4">
             <label>@Localizer["Price"] (<span class="text-danger">*</span>):</label>
              <div><span asp-validation-for="Price" class="text-danger"></span></div>
-            <input asp-for="Price" class="form-control" type="number" min="0" value="0" />
+            <input asp-for="Price" class="form-control" type="number" />
         </div>
         <div class="mb-3 col-8">
             <label>@Localizer["Description"] (<span class="text-danger">*</span>):</label>
