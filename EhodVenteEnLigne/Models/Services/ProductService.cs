@@ -148,6 +148,7 @@ namespace EhodBoutiqueEnLigne.Models.Services
                 Description = product.Description,
                 Details = product.Details
             };
+            
             return productEntity;
         }
 
